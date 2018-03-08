@@ -33,7 +33,8 @@
   <description>Vertx - CRUD</description>
 
   <properties>
-    <vertx.version>3.4.2.redhat-006</vertx.version>
+    <vertx.version>3.4.2.redhat-009</vertx.version>
+    <release.candidate.repository>https://maven.repository.redhat.com/ga/</release.candidate.repository>
     <slf4j.version>1.7.21</slf4j.version>
     <vertx-maven-plugin.version>1.0.13</vertx-maven-plugin.version>
     <vertx.verticle>io.openshift.booster.CrudApplication</vertx.verticle>
@@ -210,4 +211,20 @@
       </build>
     </profile>
   </profiles>
+
+  <repositories>
+    <repository>
+      <id>redhat-build</id>
+      <name>Red Hat builds Repository</name>
+      <url>${release.candidate.repository}</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
