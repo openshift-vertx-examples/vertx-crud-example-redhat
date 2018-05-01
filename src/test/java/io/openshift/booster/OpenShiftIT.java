@@ -1,5 +1,6 @@
 package io.openshift.booster;
 
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.vertx.core.json.JsonArray;
@@ -97,6 +98,30 @@ public class OpenShiftIT {
   public void testCreatingAFruitWithoutAName() {
     Response response = given()
       .body(new JsonObject().put("stock", 5).encode())
+      .post()
+      .then().assertThat().statusCode(422).extract().response();
+
+    JsonObject result = new JsonObject(response.asString());
+    assertThat(result.getString("error")).isNotBlank();
+    assertThat(result.getString("path")).isEqualTo("/api/fruits");
+  }
+
+  @Test
+  public void testCreatingAFruitWithoutAStock() {
+    Response response = given()
+      .body(new JsonObject().put("name", "Banana").encode())
+      .post()
+      .then().assertThat().statusCode(422).extract().response();
+
+    JsonObject result = new JsonObject(response.asString());
+    assertThat(result.getString("error")).isNotBlank();
+    assertThat(result.getString("path")).isEqualTo("/api/fruits");
+  }
+
+  @Test
+  public void testCreatingAFruitWithStockLowerThanZero() {
+    Response response = given()
+      .body(new JsonObject().put("name", "Banana").put("stock",-1).encode())
       .post()
       .then().assertThat().statusCode(422).extract().response();
 
@@ -249,6 +274,44 @@ public class OpenShiftIT {
 
     response = given()
       .body(new JsonObject().put("name", "pear").put("stock", 5).put("id", id + 1).encode())
+      .put("/" + id)
+      .then().assertThat().statusCode(422).extract().response();
+
+    result = new JsonObject(response.asString());
+    assertThat(result.getString("error")).isNotBlank();
+    assertThat(result.getString("path")).isEqualTo("/api/fruits/" + id);
+  }
+
+  @Test
+  public void testEditingAFruitWithoutAStock() {
+    Response response = given()
+      .body(new JsonObject().put("name", "Banana").put("stock", 5).encode())
+      .post()
+      .then().assertThat().statusCode(201).extract().response();
+
+    JsonObject result = new JsonObject(response.asString());
+    long id = result.getLong("id");
+    response = given()
+      .body(new JsonObject().put("name", "Banana").encode())
+      .put("/" + id)
+      .then().assertThat().statusCode(422).extract().response();
+
+    result = new JsonObject(response.asString());
+    assertThat(result.getString("error")).isNotBlank();
+    assertThat(result.getString("path")).isEqualTo("/api/fruits/" + id);
+  }
+
+  @Test
+  public void testEditingAFruitWithStockLowerThanZero() {
+    Response response = given()
+      .body(new JsonObject().put("name", "Banana").put("stock", 5).encode())
+      .post()
+      .then().assertThat().statusCode(201).extract().response();
+
+   JsonObject result = new JsonObject(response.asString());
+    long id = result.getLong("id");
+    response = given()
+      .body(new JsonObject().put("name", "Banana").put("stock",-1).encode())
       .put("/" + id)
       .then().assertThat().statusCode(422).extract().response();
 
