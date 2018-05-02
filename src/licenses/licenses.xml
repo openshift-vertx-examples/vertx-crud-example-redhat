@@ -4,7 +4,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.8.6.redhat-1</version>
+            <version>2.9.5.redhat-001</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -15,7 +15,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.8.6.redhat-1</version>
+            <version>2.9.5.redhat-001</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.8.6.redhat-1</version>
+            <version>2.9.5.redhat-001</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -114,7 +114,7 @@
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
-            <version>0.9.5.2-redhat-007</version>
+            <version>0.9.5.2-redhat-008</version>
             <licenses>
                 <license>
                     <name>GNU Lesser General Public License v2.1 only</name>
@@ -129,7 +129,7 @@
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>mchange-commons-java</artifactId>
-            <version>0.2.11.redhat-007</version>
+            <version>0.2.11.redhat-008</version>
             <licenses>
                 <license>
                     <name>GNU Lesser General Public License v2.1 only</name>
@@ -265,7 +265,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-buffer</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -276,7 +276,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-codec</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -287,7 +287,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-codec-dns</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -298,7 +298,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-codec-http</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -309,7 +309,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-codec-http2</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -320,7 +320,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-codec-socks</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -331,7 +331,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-common</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -342,7 +342,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-handler</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -353,7 +353,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-handler-proxy</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -364,7 +364,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-resolver</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -375,7 +375,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-resolver-dns</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -386,7 +386,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-transport</artifactId>
-            <version>4.1.8.Final-redhat-1</version>
+            <version>4.1.19.Final-redhat-1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -397,7 +397,7 @@
         <dependency>
             <groupId>io.reactivex</groupId>
             <artifactId>rxjava</artifactId>
-            <version>1.3.0.redhat-005</version>
+            <version>1.3.5</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -450,9 +450,35 @@
             </licenses>
         </dependency>
         <dependency>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-core</artifactId>
+            <version>1.3.33.Final</version>
+            <licenses>
+                <license>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-auth-common</artifactId>
-            <version>3.4.2.redhat-009</version>
+            <version>3.5.1.redhat-003</version>
+            <licenses>
+                <license>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+                </license>
+                <license>
+                    <name>Eclipse Public License, Version 1.0</name>
+                    <url>http://repository.jboss.org/licenses/epl-1.0.txt</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-bridge-common</artifactId>
+            <version>3.5.1.redhat-003</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -467,22 +493,22 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>3.4.2.redhat-009</version>
+            <version>3.5.1.redhat-003</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
                     <url>http://www.apache.org/licenses/LICENSE-2.0</url>
                 </license>
                 <license>
-                    <name>Eclipse Public License, Version 1.0</name>
-                    <url>http://repository.jboss.org/licenses/epl-1.0.txt</url>
+                    <name>Eclipse Public License - v 2.0</name>
+                    <url>http://www.eclipse.org/legal/epl-v20.html</url>
                 </license>
             </licenses>
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-jdbc-client</artifactId>
-            <version>3.4.2.redhat-009</version>
+            <version>3.5.1.redhat-003</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -497,7 +523,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-rx-java</artifactId>
-            <version>3.4.2.redhat-009</version>
+            <version>3.5.1</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -512,7 +538,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-sql-common</artifactId>
-            <version>3.4.2.redhat-009</version>
+            <version>3.5.1.redhat-003</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -527,7 +553,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-unit</artifactId>
-            <version>3.4.2.redhat-009</version>
+            <version>3.5.1.redhat-003</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -542,7 +568,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
-            <version>3.4.2.redhat-009</version>
+            <version>3.5.1.redhat-003</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -799,7 +825,7 @@
         <dependency>
             <groupId>org.arquillian.cube</groupId>
             <artifactId>arquillian-cube-api</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -810,7 +836,7 @@
         <dependency>
             <groupId>org.arquillian.cube</groupId>
             <artifactId>arquillian-cube-core</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -821,7 +847,7 @@
         <dependency>
             <groupId>org.arquillian.cube</groupId>
             <artifactId>arquillian-cube-kubernetes</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -832,7 +858,7 @@
         <dependency>
             <groupId>org.arquillian.cube</groupId>
             <artifactId>arquillian-cube-openshift</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -843,7 +869,18 @@
         <dependency>
             <groupId>org.arquillian.cube</groupId>
             <artifactId>arquillian-cube-openshift-api</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
+            <licenses>
+                <license>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <groupId>org.arquillian.cube</groupId>
+            <artifactId>arquillian-cube-openshift-starter</artifactId>
+            <version>1.15.2</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -854,7 +891,7 @@
         <dependency>
             <groupId>org.arquillian.cube</groupId>
             <artifactId>arquillian-cube-requirement-spi</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -865,7 +902,7 @@
         <dependency>
             <groupId>org.arquillian.cube</groupId>
             <artifactId>arquillian-cube-spi</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1203,62 +1240,7 @@
         <dependency>
             <groupId>org.jboss.arquillian.config</groupId>
             <artifactId>arquillian-config-impl-base</artifactId>
-            <version>1.1.12.Final</version>
-            <licenses>
-                <license>
-                    <name>Apache License 2.0</name>
-                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-                </license>
-            </licenses>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.arquillian.container</groupId>
-            <artifactId>arquillian-container-impl-base</artifactId>
-            <version>1.1.12.Final</version>
-            <licenses>
-                <license>
-                    <name>Apache License 2.0</name>
-                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-                </license>
-            </licenses>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.arquillian.container</groupId>
-            <artifactId>arquillian-container-spi</artifactId>
-            <version>1.1.12.Final</version>
-            <licenses>
-                <license>
-                    <name>Apache License 2.0</name>
-                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-                </license>
-            </licenses>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.arquillian.container</groupId>
-            <artifactId>arquillian-container-test-api</artifactId>
-            <version>1.1.12.Final</version>
-            <licenses>
-                <license>
-                    <name>Apache License 2.0</name>
-                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-                </license>
-            </licenses>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.arquillian.container</groupId>
-            <artifactId>arquillian-container-test-impl-base</artifactId>
-            <version>1.1.12.Final</version>
-            <licenses>
-                <license>
-                    <name>Apache License 2.0</name>
-                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-                </license>
-            </licenses>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.arquillian.container</groupId>
-            <artifactId>arquillian-container-test-spi</artifactId>
-            <version>1.1.12.Final</version>
+            <version>1.2.0.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1269,7 +1251,7 @@
         <dependency>
             <groupId>org.jboss.arquillian.core</groupId>
             <artifactId>arquillian-core-api</artifactId>
-            <version>1.1.12.Final</version>
+            <version>1.2.0.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1280,7 +1262,7 @@
         <dependency>
             <groupId>org.jboss.arquillian.core</groupId>
             <artifactId>arquillian-core-impl-base</artifactId>
-            <version>1.1.12.Final</version>
+            <version>1.2.0.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1301,8 +1283,8 @@
         </dependency>
         <dependency>
             <groupId>org.jboss.arquillian.junit</groupId>
-            <artifactId>arquillian-junit-container</artifactId>
-            <version>1.1.12.Final</version>
+            <artifactId>arquillian-junit-core</artifactId>
+            <version>1.2.0.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1312,8 +1294,8 @@
         </dependency>
         <dependency>
             <groupId>org.jboss.arquillian.junit</groupId>
-            <artifactId>arquillian-junit-core</artifactId>
-            <version>1.1.12.Final</version>
+            <artifactId>arquillian-junit-standalone</artifactId>
+            <version>1.2.0.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1324,7 +1306,7 @@
         <dependency>
             <groupId>org.jboss.arquillian.test</groupId>
             <artifactId>arquillian-test-api</artifactId>
-            <version>1.1.12.Final</version>
+            <version>1.2.0.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1335,7 +1317,7 @@
         <dependency>
             <groupId>org.jboss.arquillian.test</groupId>
             <artifactId>arquillian-test-impl-base</artifactId>
-            <version>1.1.12.Final</version>
+            <version>1.2.0.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1346,7 +1328,18 @@
         <dependency>
             <groupId>org.jboss.arquillian.test</groupId>
             <artifactId>arquillian-test-spi</artifactId>
-            <version>1.1.12.Final</version>
+            <version>1.2.0.Final</version>
+            <licenses>
+                <license>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.2.1.Final</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1368,7 +1361,7 @@
         <dependency>
             <groupId>org.jboss.shrinkwrap</groupId>
             <artifactId>shrinkwrap-impl-base</artifactId>
-            <version>1.2.6</version>
+            <version>1.2.3</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1379,7 +1372,7 @@
         <dependency>
             <groupId>org.jboss.shrinkwrap</groupId>
             <artifactId>shrinkwrap-spi</artifactId>
-            <version>1.2.6</version>
+            <version>1.2.3</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1434,7 +1427,7 @@
         <dependency>
             <groupId>org.jboss.shrinkwrap.descriptors</groupId>
             <artifactId>shrinkwrap-descriptors-spi</artifactId>
-            <version>2.0.0-alpha-10</version>
+            <version>2.0.0</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1538,6 +1531,28 @@
                 <license>
                     <name>Apache License 2.0</name>
                     <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.xnio</groupId>
+            <artifactId>xnio-api</artifactId>
+            <version>3.3.6.Final</version>
+            <licenses>
+                <license>
+                    <name>Public Domain</name>
+                    <url>http://repository.jboss.org/licenses/cc0-1.0.txt</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.xnio</groupId>
+            <artifactId>xnio-nio</artifactId>
+            <version>3.3.6.Final</version>
+            <licenses>
+                <license>
+                    <name>Public Domain</name>
+                    <url>http://repository.jboss.org/licenses/cc0-1.0.txt</url>
                 </license>
             </licenses>
         </dependency>
