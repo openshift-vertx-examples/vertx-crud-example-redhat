@@ -112,36 +112,6 @@
             </licenses>
         </dependency>
         <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.5.2-redhat-008</version>
-            <licenses>
-                <license>
-                    <name>GNU Lesser General Public License v2.1 only</name>
-                    <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
-                </license>
-                <license>
-                    <name>Eclipse Public License, Version 1.0</name>
-                    <url>http://repository.jboss.org/licenses/epl-1.0.txt</url>
-                </license>
-            </licenses>
-        </dependency>
-        <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>mchange-commons-java</artifactId>
-            <version>0.2.11.redhat-008</version>
-            <licenses>
-                <license>
-                    <name>GNU Lesser General Public License v2.1 only</name>
-                    <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
-                </license>
-                <license>
-                    <name>Eclipse Public License, Version 1.0</name>
-                    <url>http://repository.jboss.org/licenses/epl-1.0.txt</url>
-                </license>
-            </licenses>
-        </dependency>
-        <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>logging-interceptor</artifactId>
             <version>3.9.1</version>
@@ -226,6 +196,28 @@
                 <license>
                     <name>BSD 2-clause "Simplified" License</name>
                     <url>https://opensource.org/licenses/BSD-2-Clause/</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <groupId>io.agroal</groupId>
+            <artifactId>agroal-api</artifactId>
+            <version>0.5.0.redhat-1</version>
+            <licenses>
+                <license>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <groupId>io.agroal</groupId>
+            <artifactId>agroal-pool</artifactId>
+            <version>0.5.0.redhat-1</version>
+            <licenses>
+                <license>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
                 </license>
             </licenses>
         </dependency>
@@ -463,7 +455,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-auth-common</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -478,7 +470,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-bridge-common</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -493,7 +485,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -508,7 +500,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-jdbc-client</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -538,7 +530,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-sql-common</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -553,7 +545,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-unit</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -568,7 +560,7 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
-            <version>3.5.1.redhat-003</version>
+            <version>3.5.1.redhat-004</version>
             <licenses>
                 <license>
                     <name>Apache License 2.0</name>
@@ -1606,8 +1598,8 @@
             <version>9.4.1212</version>
             <licenses>
                 <license>
-                    <name>BSD 2-clause "Simplified" License</name>
-                    <url>https://opensource.org/licenses/BSD-2-Clause/</url>
+                    <name>BSD-2-Clause</name>
+                    <url>https://jdbc.postgresql.org/about/license.html</url>
                 </license>
             </licenses>
         </dependency>

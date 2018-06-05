@@ -45,11 +45,10 @@ public class CrudApplication extends AbstractVerticle {
 
     // Create a JDBC client
     JDBCClient jdbc = JDBCClient.createShared(vertx, new JsonObject()
-      .put("url", "jdbc:postgresql://" + getEnv("MY_DATABASE_SERVICE_HOST", "localhost") + ":5432/my_data")
-      .put("driver_class", "org.postgresql.Driver")
-      .put("user", getEnv("DB_USERNAME", "user"))
-      .put("password", getEnv("DB_PASSWORD", "password"))
-      .put("provider_class", "io.vertx.ext.jdbc.spi.impl.C3P0DataSourceProvider")
+      .put("jdbcUrl", "jdbc:postgresql://" + getEnv("MY_DATABASE_SERVICE_HOST", "localhost") + ":5432/my_data")
+      .put("driverClassName", "org.postgresql.Driver")
+      .put("principal", getEnv("DB_USERNAME", "user"))
+      .put("credential", getEnv("DB_PASSWORD", "password"))
     );
 
     DBInitHelper.initDatabase(vertx, jdbc)
