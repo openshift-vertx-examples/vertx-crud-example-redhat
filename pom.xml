@@ -28,7 +28,7 @@
   <description>Vertx - CRUD</description>
 
   <properties>
-    <vertx.version>3.5.4.redhat-00002</vertx.version>
+    <vertx.version>3.6.3.redhat-00009</vertx.version>
     <slf4j.version>1.7.26</slf4j.version>
     <vertx-maven-plugin.version>1.0.18</vertx-maven-plugin.version>
     <vertx.verticle>io.openshift.booster.CrudApplication</vertx.verticle>
@@ -84,6 +84,18 @@
       <version>42.2.5</version>
     </dependency>
 
+    <dependency>
+      <groupId>io.agroal</groupId>
+      <artifactId>agroal-api</artifactId>
+      <version>1.3.0.redhat-00001</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.agroal</groupId>
+      <artifactId>agroal-pool</artifactId>
+      <version>1.3.0.redhat-00001</version>
+    </dependency>
+    
     <!-- Logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
