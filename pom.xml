@@ -93,7 +93,7 @@
     <dependency>
       <groupId>io.agroal</groupId>
       <artifactId>agroal-pool</artifactId>
-      <version>1.3.0.redhat-00001</version>
+      <version>1.5</version>
     </dependency>
     
     <!-- Logging -->
