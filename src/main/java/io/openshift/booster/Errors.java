@@ -1,4 +1,4 @@
-package io.openshift.example;
+package io.openshift.booster;
 
 import io.vertx.core.json.JsonObject;
 import io.vertx.rxjava.ext.web.RoutingContext;
