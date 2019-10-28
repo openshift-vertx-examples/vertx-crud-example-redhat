@@ -87,7 +87,7 @@
     <dependency>
       <groupId>io.agroal</groupId>
       <artifactId>agroal-api</artifactId>
-      <version>1.3.0.redhat-00001</version>
+      <version>1.7</version>
     </dependency>
 
     <dependency>
