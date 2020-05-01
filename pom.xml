@@ -28,9 +28,9 @@
   <description>Vertx - CRUD</description>
 
   <properties>
-    <vertx.version>3.8.5.redhat-00005</vertx.version>
+    <vertx.version>3.9.0.redhat-00008</vertx.version>
     <slf4j.version>1.7.30</slf4j.version>
-    <agroal.version>1.5.0.redhat-00001</agroal.version>
+    <agroal.version>1.7.0.redhat-00002</agroal.version>
     <vertx-maven-plugin.version>1.0.22</vertx-maven-plugin.version>
     <vertx.verticle>io.openshift.example.CrudApplication</vertx.verticle>
 
@@ -176,8 +176,9 @@
                 <goals>
                   <goal>resource</goal>
                   <goal>build</goal>
-                  <goal>helm</goal>
+                  <goal>apply</goal>
                 </goals>
+                <phase>package</phase>
               </execution>
             </executions>
             <configuration>
@@ -186,9 +187,9 @@
                   <exclude>f8-maven-scm</exclude>
                 </excludes>
                 <config>
-                  <vertx-health-check>
+                  <f8-healthcheck-vertx>
                     <path>/health</path>
-                  </vertx-health-check>
+                  </f8-healthcheck-vertx>
                 </config>
               </enricher>
             </configuration>
