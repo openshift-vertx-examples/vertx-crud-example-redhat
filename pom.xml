@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.openshift.example</groupId>
-  <artifactId>crud-vertx</artifactId>
+  <artifactId>crud-example</artifactId>
   <version>24-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -41,7 +41,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <fabric8.generator.from>registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift</fabric8.generator.from>
+    <fabric8.generator.from>registry.access.redhat.com/ubi8/openjdk-8</fabric8.generator.from>
   </properties>
 
   <dependencyManagement>
@@ -155,6 +155,25 @@
           <redeploy>true</redeploy>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
+        <version>4.0.0</version>
+        <executions>
+          <execution>
+            <id>get-the-git-infos</id>
+            <goals>
+              <goal>revision</goal>
+            </goals>
+            <phase>initialize</phase>
+          </execution>
+        </executions>
+        <configuration>
+          <includeOnlyProperties>
+            <includeOnlyProperty>^git.remote.origin.url$</includeOnlyProperty>
+          </includeOnlyProperties>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
@@ -192,6 +211,44 @@
                   </f8-healthcheck-vertx>
                 </config>
               </enricher>
+              <resources>
+                <labels>
+                  <all>
+                    <property>
+                      <name>app.kubernetes.io/part-of</name>
+                      <value>crud-example</value>
+                    </property>
+                    <property>
+                      <name>app.kubernetes.io/name</name>
+                      <value>crud-service</value>
+                    </property>
+                    <property>
+                      <name>app.kubernetes.io/component</name>
+                      <value>frontend</value>
+                    </property>
+                    <property>
+                      <name>app.kubernetes.io/runtime</name>
+                      <value>vertx</value>
+                    </property>
+                    <property>
+                      <name>app.kubernetes.io/runtime-version</name>
+                      <value>${vertx.version}</value>
+                    </property>
+                  </all>
+                </labels>
+                <annotations>
+                  <all>
+                    <property>
+                      <name>app.openshift.io/vcs-uri</name>
+                      <value>${git.remote.origin.url}</value>
+                    </property>
+                    <property>
+                      <name>app.openshift.io/connects-to</name>
+                      <value>my-database</value>
+                    </property>
+                  </all>
+                </annotations>
+              </resources>
             </configuration>
           </plugin>
         </plugins>
@@ -222,6 +279,13 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+
+    <profile>
+      <id>java11</id>
+      <properties>
+        <fabric8.generator.from>registry.access.redhat.com/ubi8/openjdk-11</fabric8.generator.from>
+      </properties>
     </profile>
   </profiles>
 
