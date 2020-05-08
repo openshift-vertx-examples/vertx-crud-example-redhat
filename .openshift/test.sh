@@ -46,7 +46,7 @@ oc new-app --template=vertx-crud-example -p SOURCE_REPOSITORY_URL="$REPO"
 # wait for pod to be ready
 waitForPodState "my-database" "Running"
 waitForPodReadiness "my-database" 1
-waitForPodState "crud-vertx" "Running"
-waitForPodReadiness "crud-vertx" 1
+waitForPodState "crud-example" "Running"
+waitForPodReadiness "crud-example" 1
 
 mvn verify -Popenshift-it -Denv.init.enabled=false
