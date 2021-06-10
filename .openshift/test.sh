@@ -37,7 +37,7 @@ oc delete routes --all
 oc delete template --all
 
 # Deploy the templates and required resources
-oc apply -f .openshift/database.yaml
+oc apply -f .openshift/service.database.yaml
 oc apply -f .openshift/application.yaml
 
 # Create the application

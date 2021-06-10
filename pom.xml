@@ -28,7 +28,7 @@
   <description>Vertx - CRUD</description>
 
   <properties>
-    <vertx.version>3.9.1.redhat-00001</vertx.version>
+    <vertx.version>3.9.6.redhat-00001</vertx.version>
     <slf4j.version>1.7.30</slf4j.version>
     <agroal.version>1.7.0.redhat-00002</agroal.version>
     <vertx-maven-plugin.version>1.0.22</vertx-maven-plugin.version>
@@ -82,7 +82,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.2.14</version>
+      <version>42.2.18</version>
     </dependency>
 
     <dependency>
@@ -96,7 +96,7 @@
       <artifactId>agroal-pool</artifactId>
       <version>${agroal.version}</version>
     </dependency>
-    
+
     <!-- Logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -281,7 +281,7 @@
         </plugins>
       </build>
     </profile>
-    
+
   </profiles>
 
   <repositories>
